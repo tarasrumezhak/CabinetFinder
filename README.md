@@ -4,16 +4,15 @@ Cabinet Finder is a Python script that uses classical computer vision to detect 
 
 ## Usage
 
-To use Cabinet Finder, run the following command:
+To use Cabinet Finder, run the following commands:
 
 ```
-python main.py -t /path/to/templates/folder -q /path/to/query/image
-```
-
-For example:
-
-```
-python .\main.py --templates data/templates/wall_cabinet --query data/query/interior.png
+git clone https://github.com/tarasrumezhak/CabinetFinder.git
+cd CabinetFinder
+python -m venv venv
+venv\Scripts\activate.bat
+pip install -r requirements.txt
+python main.py --templates data/templates/wall_cabinet --query data/query/interior.png
 ```
 
 ### Required arguments:
